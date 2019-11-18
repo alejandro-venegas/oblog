@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #fffff8;
+  margin: 0;
+  display: grid;
+
+}
+
+
+#blog-header{
+  position: sticky;
+  top:0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0px 5px #616161;
+
+  padding: 5px 10px;
+  border-bottom: #BDBDBD solid 1px;
+}
+
+#hamburger-menu{
+  font-size: 20px;
+  color: #757575;
+
+}
+
+#blog-header > h1{
+
+  padding-left: 10px;
+  color: #212121;
+  font-family: 'Vibes', cursive;
+  margin: 0;
+
+}
