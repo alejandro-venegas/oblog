@@ -6,7 +6,10 @@
 }
 body{
   position: relative;
-  background-color: #FFFFFF;
+  background-image: url("../imgs/landscape-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin: 0;
   display: grid;
   grid-auto-rows: auto;
