@@ -20,7 +20,7 @@ body{
   top:0;
   display: flex;
   align-items: center;
-  box-shadow: 0 0px 5px #616161;
+  box-shadow: 0 0.5px 5px #616161;
   background: #FFFFFF;
   grid-area: hd;
 
@@ -37,7 +37,7 @@ body{
 #blog-header > h1{
 
   padding-left: 10px;
-  color: #212121;
+  color: #00838F;
   font-family: 'Vibes', cursive;
   margin: 0;
 
@@ -66,7 +66,7 @@ body{
 }
 #main-nav:target{
   left:0;
-  box-shadow: 0px 2px 7px #616161;
+  box-shadow: 0px 2px 7px #424242;
   z-index: 10;
 }
 #main-nav:target + #black-screen{
@@ -94,17 +94,14 @@ body{
   font-size: 30px;
 }
 #nav-list > li:last-child{
-  background-color: #00ACC1;
+  background-color: #00838F;
   border-bottom: none;
   border-radius: 5px;
 }
 
 #nav-list > li:last-child a{
-  color: #0D0D0D;
+  color: #fffff8;
 }
-
-
-
 
 #main-nav a{
   font-family: sans-serif;
@@ -114,6 +111,44 @@ body{
   justify-content: center;
   align-content: center;
   padding: 5px 0px;
+}
 
 
+main{
+  display: grid;
+  margin: 40px 0px;
+  grid-auto-rows: 300px;
+  grid-auto-columns: 250px;
+  grid-template-areas:
+  "pc";
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.post-card{
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+  border: #00838F solid;
+  border-radius: 5px;
+  height: 100%;
+  box-shadow: 0 0.5px 5px #616161;
+}
+
+.post-card > header{
+  background-color:  #00838F;
+  color: white;
+  padding: 10px 10px;
+
+}
+
+.post-card > header h2{
+  margin: 0px 0 5px 0;
+}
+
+.post-card> header time{
+  padding: 0 0 10px 10px;
+  font-size: 15px;
 }
