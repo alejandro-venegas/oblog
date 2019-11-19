@@ -3,9 +3,14 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #fffff8;
+  background-color: #FFFFFF;
   margin: 0;
   display: grid;
+  grid-auto-rows: auto;
+  grid-template-areas:
+  "hd"
+  "mn"
+  "ft";
 
 }
 
@@ -16,6 +21,8 @@ body{
   display: flex;
   align-items: center;
   box-shadow: 0 0px 5px #616161;
+  background: #FFFFFF;
+  grid-area: hd;
 
   padding: 5px 10px;
   border-bottom: #BDBDBD solid 1px;
@@ -23,7 +30,7 @@ body{
 
 #hamburger-menu{
   font-size: 20px;
-  color: #757575;
+  color: #424242;
 
 }
 
@@ -33,5 +40,66 @@ body{
   color: #212121;
   font-family: 'Vibes', cursive;
   margin: 0;
+
+}
+
+#main-nav{
+  padding: 0;
+  left: -100vw;
+  position: absolute;
+  top:0px;
+  background-color: #FFFFFF;
+  transition: all 1s;
+
+  border-radius: 5px;
+
+}
+#main-nav:target{
+  left:0;
+  box-shadow: 0px 0 7px #616161;
+}
+
+#nav-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+}
+
+#nav-list >li{
+  border-bottom: #E0E0E0 solid 1px;
+
+}
+#nav-list > li:first-child{
+  margin-left: auto;
+  margin-right: 20px;
+  border-bottom: 0;
+  font-size: 30px;
+}
+#nav-list > li:last-child{
+  background-color: #00ACC1;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+#nav-list > li:last-child a{
+  color: #0D0D0D;
+}
+
+
+
+
+#main-nav a{
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #212121;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5px 0px;
+
 
 }
