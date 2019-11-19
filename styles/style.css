@@ -119,18 +119,8 @@ body{
 main{
 
 
-  padding: 8.8vw 40px;
 
-  background: #FFFFFF;
-  transform: skewY(-10deg) translateY(-8.8vw);
-}
-
-main a {
-  text-decoration: none;
-}
-
-#main-container{
-  padding: 40px 0 0 0;
+  padding: 40px 40px ;
   display: grid;
   grid-auto-rows: 225px;
   grid-template-columns: repeat(auto-fill, 250px);
@@ -140,8 +130,15 @@ main a {
   justify-content: center;
   grid-column-gap: 60px;
   grid-row-gap: 40px;
-  transform: skewY(10deg);
+  background: #FFFFFF;
+
 }
+
+main a {
+  text-decoration: none;
+}
+
+
 .post-card{
 
 
