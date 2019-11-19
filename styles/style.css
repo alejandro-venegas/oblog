@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body{
+  position: relative;
   background-color: #FFFFFF;
   margin: 0;
   display: grid;
@@ -20,37 +21,34 @@ body{
 
 #background-decoration-01{
   position: absolute;
-  height: 60%;
+  height: 50%;
   width: 100%;
-  top: 0;
   left: 0;
-  background-color: #EEEEEE;
+  background-color: #E0E0E0;
   z-index: -5;
-  transform: skewY(-10deg) translateY(-8.8vw);
+  transform: skewY(-20deg) translateY(-18.2vw);
 }
 
 #background-decoration-02{
   position: absolute;
-  height: 60%;
+  height: 50%;
   width: 100%;
-  top:60%;
+  top: 50%;
   left: 0;
   z-index: -4;
-  background-color: #FAFAFA;
-  transform: skewY(10deg) translateY(-4.375vw);
+  background-color: #EEEEEE;
+  transform: skewY(20deg) translateY(-18.2vw) ;
   opacity: 0.7;
 }
 
 
 footer{
-  position: sticky;
+
   bottom:0;
   grid-area: ft;
   width: 100vw;
   background: #212121;
-  z-index: -20;
   color: #FFFFF8;
-  padding:17.6vw 0;
-  transform: scaleY(8.8vw);
+  height: 50px;
 
 }
