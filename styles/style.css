@@ -6,7 +6,7 @@
 }
 body{
   position: relative;
-  background: url("../imgs/landscape-background.svg") center/cover no-repeat;
+  background: url("../imgs/landscape-background.svg") center/cover no-repeat fixed;
   margin: 0;
   display: grid;
   grid-auto-rows: auto;

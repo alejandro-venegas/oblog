@@ -6,11 +6,11 @@ main{
 }
 #main-grid{
   display: grid;
-  grid-auto-rows: 225px;
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, 250px);
   grid-template-areas:
   "pc";
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   grid-column-gap: 60px;
   grid-row-gap: 40px;
@@ -22,7 +22,6 @@ main a {
 
 
 .post-card{
-
 
   display: flex;
   flex-direction: column;
