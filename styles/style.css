@@ -6,10 +6,7 @@
 }
 body{
   position: relative;
-  background-image: url("../imgs/landscape-background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url("../imgs/landscape-background.svg") center/cover no-repeat;
   margin: 0;
   display: grid;
   grid-auto-rows: auto;
@@ -20,29 +17,6 @@ body{
 
 }
 
-
-
-#background-decoration-01{
-  position: absolute;
-  height: 50%;
-  width: 100%;
-  left: 0;
-  background-color: #E0E0E0;
-  z-index: -5;
-  transform: skewY(-20deg) translateY(-18.2vw);
-}
-
-#background-decoration-02{
-  position: absolute;
-  height: 50%;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  z-index: -4;
-  background-color: #EEEEEE;
-  transform: skewY(20deg) translateY(-18.2vw) ;
-  opacity: 0.7;
-}
 
 
 footer{
