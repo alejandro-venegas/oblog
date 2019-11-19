@@ -122,6 +122,16 @@ main{
 
 
 }
+#background-decoration{
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F5F5F5;
+  z-index: -1;
+  transform: skewY(-5deg) translateY(-4.375vw);
+}
 #main-grid{
   display: grid;
   grid-auto-rows: 225px;
