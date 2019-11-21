@@ -1,9 +1,4 @@
-main{
-  padding: 40px 40px ;
 
-
-
-}
 #main-grid{
   display: grid;
   grid-auto-rows: 1fr;
