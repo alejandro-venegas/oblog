@@ -83,11 +83,7 @@
   border-bottom: none;
   font-size: 30px;
 }
-#nav-list > li:last-child{
-  background-color: #00838F;
-  border-bottom: none;
-  border-radius: 5px;
-}
+
 
 
 #main-nav li a{
@@ -102,6 +98,9 @@
 
 #nav-list > li:last-child a{
   color: #fffff8;
+  background-color: #00838F;
+  border-bottom: none;
+  border-radius: 5px;
 }
 
 
@@ -127,6 +126,7 @@
   #nav-list{
     flex-direction: row;
     width: 100%;
+    align-items: center;
   }
   #close-main-menu-button{
     display: none;
@@ -138,7 +138,6 @@
   #nav-list > li a{
     padding: 5px 10px;
 
-
   }
   #nav-list> li:last-child{
     margin-left: auto;
@@ -146,5 +145,63 @@
 }
 
 @media only screen and (min-width:1024px){
+  #blog-header{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  #blog-header > h1{
+    padding-left: 10px;
+  }
+  #main-nav{
+    width: 40%;
+  }
+
+
+
+  #nav-list> li a{
+    transition: all 0.3s ease-in;
+  }
+
+  #nav-list > li a:hover{
+    transform: translateY(-3px);
+    color: #00838F;
+  }
+
+  #nav-list> li:last-child a {
+    position: relative;
+    background-color: transparent;
+    color: #212121;
+    padding: 5px 20px;
+    border: #00838F solid 2px;
+    transform: none;
+    z-index: 0;
+    overflow: hidden;
+
+  }
+  #nav-list> li:last-child a:hover{
+    color: #FFFFF8;
+  }
+    /* Subscribe button circular background animation */
+  #nav-list> li:last-child a::after{
+    position: absolute;
+    content: "";
+    background-color: #00838F;
+    border-radius: 50%;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in;
+   z-index: -1;
+  }
+
+
+  #nav-list>li:last-child a:hover::after{
+    height: 300px;
+    width: 300px;
+  }
+
 
 }
