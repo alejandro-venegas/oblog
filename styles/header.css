@@ -171,7 +171,7 @@
   #nav-list> li:last-child a {
     position: relative;
     background-color: transparent;
-    color: #212121;
+    color: #00838F;
     padding: 5px 20px;
     border: #00838F solid 2px;
     transform: none;
@@ -182,7 +182,7 @@
   #nav-list> li:last-child a:hover{
     color: #FFFFF8;
   }
-    /* Subscribe button circular background animation */
+
   #nav-list> li:last-child a::after{
     position: absolute;
     content: "";
@@ -193,10 +193,11 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease-in;
    z-index: -1;
   }
 
+  /* Subscribe button circular background animation */
 
   #nav-list>li:last-child a:hover::after{
     height: 300px;
