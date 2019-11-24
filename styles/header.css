@@ -151,10 +151,11 @@
 
   }
   #blog-header > h1{
-    padding-left: 10px;
+    margin-left: 25vw;
+    transform: translateX(-50%);
   }
   #main-nav{
-    width: 40%;
+    width: 45%;
   }
 
 
