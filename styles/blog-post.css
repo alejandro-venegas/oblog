@@ -1,0 +1,24 @@
+@import "main-style.css";
+
+
+main{
+  display: grid;
+  grid-template-areas:
+  "art"
+  "soc"
+  "auth";
+}
+
+main > article{
+  grid-area: art;
+
+}
+
+main > .social-share-buttons{
+  grid-area: soc;
+}
+
+main > .author-info{
+  grid-area: auth;
+  
+}
