@@ -7,10 +7,15 @@ main{
   "art"
   "soc"
   "auth";
+  color: #212121;
+  padding: 10px 0px;
+
+
 }
 
 main > article{
   grid-area: art;
+
 
 }
 
@@ -20,5 +25,83 @@ main > .social-share-buttons{
 
 main > .author-info{
   grid-area: auth;
-  
+
+}
+main > article > * {
+  padding: 0 10px;
+}
+
+article > header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-blend-mode: hue;
+  padding: 10px 0;
+  margin: 0 0 20px 0;
+}
+article >header> h2{
+  margin: 10px 0;
+}
+article > header > span{
+  font-weight: 100;
+  font-size: 12px;
+}
+article > figure{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#main-img{
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;;
+}
+
+article  blockquote{
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+  background-color: #212121;
+  color: #FFFFF8;
+  padding: 10px 10px 10px 30px;
+  border-radius: 5px;
+  border-left: #8f0083 solid 4px;
+  box-shadow: 0 0 10px black;
+}
+
+blockquote> footer{
+  display: block;
+  height: auto;
+  margin-left: auto;
+}
+
+#social-share-buttons{
+  padding: 0 10px;
+
+}
+
+#social-share-buttons > ul{
+  list-style: none;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#social-share-buttons > ul > li > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: #FFFFF8;
+  font-size: 25px;
+  background: #00838F;
+  border-radius: 50%;
+}
+hr{
+  margin: 0 30px;
 }
