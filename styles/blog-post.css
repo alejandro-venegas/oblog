@@ -8,7 +8,9 @@ main{
   "soc"
   "auth";
   color: #212121;
-  padding: 10px 0px;
+  padding: 10px 0px 0 0;
+  justify-content: center;
+
 
 
 }
@@ -19,14 +21,7 @@ main > article{
 
 }
 
-main > .social-share-buttons{
-  grid-area: soc;
-}
 
-main > .author-info{
-  grid-area: auth;
-
-}
 main > article > * {
   padding: 0 10px;
 }
@@ -79,8 +74,13 @@ blockquote> footer{
   margin-left: auto;
 }
 
+main > hr{
+  grid-area: hr;
+}
+
 #social-share-buttons{
   padding: 0 10px;
+  grid-area: soc;
 
 }
 
@@ -88,7 +88,11 @@ blockquote> footer{
   list-style: none;
   padding: 0px 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+#social-share-buttons > ul > li {
+  margin: 0 10px;
 }
 
 #social-share-buttons > ul > li > a{
@@ -104,4 +108,102 @@ blockquote> footer{
 }
 hr{
   margin: 0 30px;
+}
+
+#author-info{
+  grid-area: auth;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  color: #212121;
+}
+#author-info > p{
+  margin: 0 0 15px 10px;
+  font-size: 12px;
+}
+
+#author-info > .info-line{
+  margin: 10px 0;
+  font-size: 13px;
+}
+#avatar-name{
+  display: flex;
+  align-items: center;
+
+}
+#author-name{
+  padding: 0px 10px;
+  color: inherit;
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+#author-avatar{
+  height: 60px;
+  width:60px;
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+
+@media only screen and (min-width: 768px) {
+  article{
+    margin: 10px;
+  }
+  main{
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". art art art art art art art art art auth auth auth auth auth  ."
+    ". soc soc soc soc soc soc soc soc soc . . . . . ."
+    ;
+
+
+  }
+  article > header{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+
+  article>header> span{
+    padding: 0 10px;
+  }
+
+  article>figure> #main-img{
+    border-radius: 5px;
+  }
+  #author-info{
+    margin: 30px 10px 0 20px;
+    padding: 10px;
+    align-self: flex-start;
+    justify-self: center;
+    background-color: #212121;
+    border-radius: 5px;
+    color: #ABABAB;
+    box-shadow: 0 0 10px black;
+  }
+
+  .info-line > b {
+    color: #FFFFF8;
+  }
+
+
+
+  #avatar-name{
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFF8;
+  }
+
+  #author-avatar{
+    height: 80px;
+    width: 80px;
+  }
+  #author-name{
+    text-align: center;
+  }
 }
