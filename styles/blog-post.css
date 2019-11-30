@@ -48,6 +48,9 @@ article > figure{
   padding: 0;
   width: 100%;
 }
+article > section {
+  margin: 40px 0 ;
+}
 
 #main-img{
   position: relative;
@@ -154,11 +157,11 @@ hr{
     margin: 10px;
   }
   main{
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(14, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    ". art art art art art art art art art auth auth auth auth auth  ."
-    ". soc soc soc soc soc soc soc soc soc . . . . . ."
+    " art art art art art art art art art auth auth auth auth auth "
+    " soc soc soc soc soc soc soc soc soc . . . . . "
     ;
 
 
@@ -206,4 +209,47 @@ hr{
   #author-name{
     text-align: center;
   }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  main{
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". art art art art art art art art art auth auth auth auth auth ."
+    ". soc soc soc soc soc soc soc soc soc . . . . . ."
+    ;
+  }
+
+    #social-share-buttons > ul > li > a{
+      position: relative;
+      background: transparent;
+      color: #00838F;
+      border: #00838F solid 2px;
+      overflow: hidden;
+      z-index: 10;
+      transition: all 0.3s ease-in;
+    }
+    #social-share-buttons > ul > li > a::before{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: #00838F;
+      transition: all 0.4s ease-in;
+      z-index: -1;
+
+    }
+    #social-share-buttons > ul > li > a:hover{
+      color: #FFFFF8;
+
+    }
+    #social-share-buttons > ul > li > a:hover::before{
+      width: 200%;
+      height: 200%;
+    }
 }
