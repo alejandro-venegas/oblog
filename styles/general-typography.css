@@ -10,13 +10,12 @@ blockquote{
   box-shadow: 0 0 10px black;
 }
 
-
-
 blockquote> footer{
   display: block;
   height: auto;
   margin-left: auto;
 }
+
 em{
   color: #8f0083;
   font-weight: bolder;
@@ -38,5 +37,4 @@ p{
   letter-spacing: 1px;
   text-align: justify;
   line-height: 20px;
-
 }

@@ -1,10 +1,12 @@
 @import "header.css";
 @import "footer.css";
 @import "general-typography.css";
+
 *{
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body{
   position: relative;
   margin: 0;
@@ -17,12 +19,10 @@ body{
 
 }
 
-
 main{
   padding: 40px 40px ;
   position: relative;
   background: #FFFFFF url("../imgs/landscape-background.svg") center/cover fixed;
   box-shadow: 0 0px 10px 10px;
   min-height: 100vh;
-
 }

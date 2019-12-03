@@ -1,6 +1,5 @@
 @import "main-style.css";
 
-
 main{
   display: grid;
   grid-template-areas:
@@ -10,17 +9,11 @@ main{
   color: #212121;
   padding: 10px 0px 0 0;
   justify-content: center;
-
-
-
 }
 
 main > article{
   grid-area: art;
-
-
 }
-
 
 main > article > * {
   padding: 0 10px;
@@ -35,19 +28,23 @@ article > header{
   padding: 10px 0;
   margin: 0 0 20px 0;
 }
+
 article >header> h2{
   margin: 10px 0;
 }
+
 article > header > span{
   font-weight: 100;
   font-size: 12px;
 }
+
 article > figure{
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
 }
+
 article > section {
   margin: 80px 0 ;
 }
@@ -59,7 +56,6 @@ article > section {
   max-height: 300px;;
 }
 
-
 main > hr{
   grid-area: hr;
 }
@@ -67,7 +63,6 @@ main > hr{
 #social-share-buttons{
   padding: 0 10px;
   grid-area: soc;
-
 }
 
 #social-share-buttons > ul{
@@ -92,6 +87,7 @@ main > hr{
   background: #00838F;
   border-radius: 50%;
 }
+
 hr{
   margin: 0 30px;
 }
@@ -103,6 +99,7 @@ hr{
   flex-direction: column;
   color: #212121;
 }
+
 #author-info > p{
   margin: 0 0 15px 10px;
   font-size: 12px;
@@ -112,18 +109,18 @@ hr{
   margin: 10px 0;
   font-size: 13px;
 }
+
 #avatar-name{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 #author-name{
   padding: 0px 10px;
   color: inherit;
   font-weight: bolder;
   font-size: 20px;
-
 }
 
 #author-avatar{
@@ -135,11 +132,11 @@ hr{
   object-fit: cover;
 }
 
-
 @media only screen and (min-width: 768px) {
   article{
     margin: 10px;
   }
+
   main{
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: auto;
@@ -147,9 +144,8 @@ hr{
     " art art art art art art art art art auth auth auth auth auth "
     " soc soc soc soc soc soc soc soc soc . . . . . "
     ;
-
-
   }
+
   article > header{
     justify-content: flex-start;
     align-items: flex-start;
@@ -163,6 +159,7 @@ hr{
   article>figure> #main-img{
     border-radius: 5px;
   }
+
   #author-info{
     margin: 30px 10px 0 20px;
     padding: 10px;
@@ -178,8 +175,6 @@ hr{
     color: #FFFFF8;
   }
 
-
-
   #avatar-name{
     justify-content: center;
     color: #FFFFF8;
@@ -189,15 +184,13 @@ hr{
     height: 80px;
     width: 80px;
   }
+
   #author-name{
     text-align: center;
   }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
-
   main{
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
@@ -216,6 +209,7 @@ hr{
       z-index: 10;
       transition: all 0.3s ease-in;
     }
+
     #social-share-buttons > ul > li > a::before{
       content: "";
       position: absolute;
@@ -225,12 +219,12 @@ hr{
       background: #00838F;
       transition: all 0.4s ease-in;
       z-index: -1;
-
     }
+
     #social-share-buttons > ul > li > a:hover{
       color: #FFFFF8;
-
     }
+
     #social-share-buttons > ul > li > a:hover::before{
       width: 200%;
       height: 200%;
