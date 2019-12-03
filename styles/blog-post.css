@@ -59,23 +59,6 @@ article > section {
   max-height: 300px;;
 }
 
-article  blockquote{
-  display: flex;
-  flex-direction: column;
-  font-weight: lighter;
-  background-color: #212121;
-  color: #FFFFF8;
-  padding: 10px 10px 10px 30px;
-  border-radius: 5px;
-  border-left: #8f0083 solid 4px;
-  box-shadow: 0 0 10px black;
-}
-
-blockquote> footer{
-  display: block;
-  height: auto;
-  margin-left: auto;
-}
 
 main > hr{
   grid-area: hr;
