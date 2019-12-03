@@ -108,10 +108,12 @@
   #hamburger-menu{
     display: none;
   }
+
   #blog-header{
     flex-direction: column;
     justify-content: center;
   }
+
   #blog-header > h1{
     padding: 0;
   }
@@ -122,22 +124,25 @@
     display: flex;
     justify-content: center;
   }
+
   #nav-list{
     flex-direction: row;
     width: 100%;
     align-items: center;
   }
+
   #close-main-menu-button{
     display: none;
   }
+
   #nav-list > li{
     border-bottom: none;
-
   }
+
   #nav-list > li a{
     padding: 5px 10px;
-
   }
+
   #nav-list> li:last-child{
     margin-left: auto;
   }
@@ -157,8 +162,6 @@
     width: 45%;
   }
 
-
-
   #nav-list> li a{
     transition: all 0.3s ease-in;
   }
@@ -177,8 +180,8 @@
     transform: none;
     z-index: 0;
     overflow: hidden;
-
   }
+
   #nav-list> li:last-child a:hover{
     color: #FFFFF8;
   }
@@ -198,11 +201,8 @@
   }
 
   /* Subscribe button circular background animation */
-
   #nav-list>li:last-child a:hover::after{
     height: 300px;
     width: 300px;
   }
-
-
 }
